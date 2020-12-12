@@ -1,0 +1,32 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/klnjmm/webandcow-challenge.git"
+        }
+    ],
+    "name": "webandcow/challenge-bootstrap",
+    "description": "Bootstrap to play WebAndCow challenge",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "~7.3",
+        "webandcow/challenge": "dev-main",
+        "tightenco/collect": "dev-master"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.4",
+        "phpunit/phpunit": "^9.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "WebAndCow\\ChallengeBootstrap\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WebAndCow\\ChallengeBootstrap\\tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev"
+}
